@@ -1,23 +1,27 @@
 export function Header() {
     return (
    <>
-  <div classname="header">
-    <div classname="col logo">
-      <img src="logo.png" />
+  <div className="row" />
+  <div className="row h_cont">
+    <div className="cont">
+      <img src="logo.png" id="logo" />
     </div>
-    <div classname="col mhub">
-      <h1>MovieHub</h1>
+    <div className="cont">
+      <h1 id="hub">Movie Hub</h1>
     </div>
-    <div classname="col watch">
-      <h1>Watch</h1>
+    <div className="cont right">
+      <h2 id="am">Add Movie</h2>
     </div>
-    <div classname="col add">
-      <h1>Add Movie</h1>
+    <div className="cont right">
+      <h2>Watch</h2>
     </div>
   </div>
-  <h3>Watch</h3>
+  <div className="row line" />
+  <div className="row" />
+  <div className="row">
+    <h2 id="wtc">Watch</h2>
+  </div>
+  <div className="row" />
 </>
-
 );
-
 }

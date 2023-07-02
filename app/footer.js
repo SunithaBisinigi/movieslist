@@ -1,9 +1,8 @@
 export function Footer() {
     return (
         <div className="footer">
-            <div className="col footer">
-                <img src="nglogo.png"/>
-            </div>
+                <img src="nglogo.png" className="img1" />
+                <img src="footext.png" className="img2"/>
         </div>
         );
 
