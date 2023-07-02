@@ -7,13 +7,19 @@ export function Likes() {
     function likesDecrement () {
         setlikes(likes-1);
     };   */
+    let rating=0
     return (
-       <>
-            <img src="up.png" id="up" onclick="likeIncrement()/" />
-            <p>100</p>
-            <img src="down.png" id="down" onclick="likeDecrement()/" />
-        </>
-
-     );
-};
+  <>
+    <div className="rat">
+        <img src="up.png"/>
+    </div>
+    <div className="rat count">
+       <p id="rati"> {rating}</p>
+    </div>
+    <div className="rat">
+        <img src="down.png"/>
+    </div> 
+ < />
+);
+}
 

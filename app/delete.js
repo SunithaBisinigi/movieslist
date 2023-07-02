@@ -1,4 +1,3 @@
-export function Del() {
-    //const del_value=i;
-    return <img src="delete.png" />
+export function Deleting() {
+    return <img src="remove.png"  />;
 }
