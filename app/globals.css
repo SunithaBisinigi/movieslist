@@ -119,4 +119,11 @@ body {
     width:26px;
     float:right;
 }
+.rm {
+    margin-left:160px;
+    margin-top:40px;
+}
+#add {
+    margin-top:10px;
+}
 
