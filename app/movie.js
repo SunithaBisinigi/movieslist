@@ -3,6 +3,7 @@ import {Dislike} from './likes.js'
 import {Deleting} from './delete.js'
 export function MovieRow() {
     return(
+<>
 <div className="main container">
   <div className="col pic">
     <img src="movie.png" id="mpic" />
@@ -23,6 +24,8 @@ export function MovieRow() {
       </div>
     </div>
   </div>
-</div>     
+</div>  
+<div className="mline"/> 
+</>  
 );
 }

@@ -15,7 +15,6 @@ export default function Home() {
         <p>Fill this form with movie details</p>
         <img src="add.png" />
     </div>
-    <div id="mline"/>
     <Footer />
  < />
   );
