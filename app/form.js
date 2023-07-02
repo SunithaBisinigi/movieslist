@@ -1,8 +1,8 @@
 export function Form() {
     return (
-    <>
+<>
   <pre>
-    <h1>Fill this form to add Movie</h1> <img scr="form.png" id="form_cross" onclick=" "/>
+    <h1>Fill this form to add Movie</h1> <img scr="form.png" id="form_cross" />
   </pre>
   <form>
     <label htmlFor="Title">Name of the Movie :</label>
