@@ -1,4 +1,3 @@
-import {Form} from './form.js'
 export function AddMovie() {
     return (
             <div className="rm">

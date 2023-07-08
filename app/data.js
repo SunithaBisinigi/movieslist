@@ -32,7 +32,7 @@ function Profile() {
 }
 */
   
-export const people = [{
+let  people = [{
   id: 0, // Used in JSX as a key
   name: 'Creola Katherine Johnson',
   profession: 'mathematician',
@@ -63,4 +63,6 @@ export const people = [{
   accomplishment: 'white dwarf star mass calculations',
   imageId: 'lrWQx8l'
 }];
+
+
 
