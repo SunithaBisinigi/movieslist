@@ -1,7 +1,7 @@
 import {Likes} from './likes.js'
 import {Dislike} from './likes.js'
 import {Deleting} from './delete.js'
-export function MovieRow() {
+export function MovieRow(props) {
     return(
 <>
 <div className="main container">
@@ -10,7 +10,7 @@ export function MovieRow() {
   </div>
   <div className="col data">
     <div className="info det">
-      <h1>Twilight</h1>
+      <h1>{props.name}</h1>
       <p>welcome to India</p>
       <h3>Description</h3>
       <p>Sunitha</p>

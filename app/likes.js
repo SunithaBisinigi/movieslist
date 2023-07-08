@@ -1,13 +1,13 @@
 "use client"
-import { useState } from 'react'
-export function Likes() {
-    const [likes, setlikes] = useState(0);
+//import { useState } from 'react'
+export default function Likes() {
+   /* const [likes, setlikes] = useState(0);
     function likesIncrement() {
        setlikes(likes+1);
     };
     function likesDecrement () {
         setlikes(likes-1);
-    };   
+    };   */
     return (
         <>
             <div className="rat">
