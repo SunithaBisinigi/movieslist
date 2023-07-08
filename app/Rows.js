@@ -1,4 +1,7 @@
-import {MovieRow} from './movie_row.js'
+"use client";
+import MovieRow from './movie_row.js';
+import {useState} from 'react';
+
 let  people = [{
   id: 0, // Used in JSX as a key
   name: 'Creola Katherine Johnson',
@@ -30,16 +33,28 @@ let  people = [{
   accomplishment: 'white dwarf star mass calculations',
   imageId: 'lrWQx8l'
 }];
-export function Rows() {
-  let movie_details = people.map((el)=>{
-    return <MovieRow
-                name = {el.name}
-                description = {el.accomplishment}
-            />
-  })
-  return (
-    <>
-      {movie_details}
-    </>
-  );
-}
+
+const Rows = () => {
+    const [id,setId]=useState(0);
+    function handleDelete() {
+        setId(people.splice(id));
+    }
+    
+    let movie_details = people.map((item) => 
+        <MovieRow
+            name = {item.name}
+            description = {item.accomplishment}
+            movie_id={item.id}
+            onDelete={handleDelete}
+        />
+    );
+    
+    return (
+        <>
+            {movie_details}
+        </>
+    );
+};
+
+export default Rows;
+

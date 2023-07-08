@@ -1,12 +1,12 @@
 "use client"
 import { useState } from 'react'
 export  function Likes() {
-    const [likes, setlikes] = useState(0);
+    const [likes, setLikes] = useState(0);
     function likesIncrement() {
-       setlikes(likes => likes+1);
+       setLikes(likes => likes+1);
     };
     function likesDecrement () {
-        setlikes(likes => likes-1);
+        setLikes(likes => likes-1);
     };   
     return (
         <>
