@@ -1,5 +1,4 @@
 import {Likes} from './likes.js'
-import {Dislike} from './likes.js'
 import {Deleting} from './delete.js'
 
 export default function MovieRow(props) {
@@ -18,12 +17,14 @@ export default function MovieRow(props) {
                     </div>
                     <div className="info action">
                         <div className="actcol">
-                            <Likes />
+                            <Likes
+                                onUpdateRating = { handleRating} 
+                            />
                         </div>
                         <div className="actcol delt">
                             <Deleting 
                                 onDelete={props.onDelete}
-                                id={props.movie_id}
+                                movie_id={props.movie_id}
                             />
                         </div>
                     </div>
