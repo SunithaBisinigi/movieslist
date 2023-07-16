@@ -76,6 +76,7 @@ body {
 }
 #mpic {
     height:276px;
+    padding-top:24px;
 }
 .data {
     margin-bottom:24px;

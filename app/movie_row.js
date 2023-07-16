@@ -18,7 +18,9 @@ export default function MovieRow(props) {
                     <div className="info action">
                         <div className="actcol">
                             <Likes
-                                onUpdateRating = { handleRating} 
+                                onUpdateRating = {props.onUpdateRating} 
+                                movie_id={props.movie_id}
+                                likes={props.likes}
                             />
                         </div>
                         <div className="actcol delt">

@@ -1,5 +1,4 @@
 import './globals.css';
-import {Data} from './data.js';
 import {Header} from './header.js';
 import {Footer} from './footer.js';
 import {AddMovie} from './Addmovie.js';

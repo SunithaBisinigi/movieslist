@@ -1,25 +1,34 @@
 "use client"
 import { useState } from 'react'
-export  function Likes() {
-    const [likes, setLikes] = useState(0);
+export  function Likes(props) {
+    
+    let votes=props.likes
     function likesIncrement() {
-       setLikes(likes => likes+1);
-    };
+        votes=votes+1
+      };
     function likesDecrement () {
-        setLikes(likes => likes-1);
+        votes=votes-1
     };   
     return (
         <>
             <div className="rating">
-                <img src="up.png" onClick={() => {
-        likesIncrement();}}/>
+                <img src="up.png" 
+                    onClick={() => {
+                        likesIncrement()
+                        props.onUpdateRating(props.movie_id,votes)
+                    }} 
+                />
             </div>
             <div className="rating count">
-                <p id="rati">{likes}</p>
+                <p id="rati">{votes}</p>
             </div>
             <div className="rating">
-                <img src="down.png" onClick={() => {
-        likesDecrement();}}/>
+                <img src="down.png" 
+                    onClick={() => {
+                        likesDecrement();
+                        props.onUpdateRating(props.movie_id,votes)
+                    }}
+                />
             </div> 
         < />
 );
