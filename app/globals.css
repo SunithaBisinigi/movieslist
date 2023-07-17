@@ -127,3 +127,42 @@ body {
     margin-top:10px;
 }
 
+/*Form Styles....*/
+
+#form {
+    border:solid 1px red; 
+    margin-left:160px;
+    margin-top:40px;  
+    background-color:rgba(39,39,52,1);
+    padding-left :64px;
+    padding-top : 64px;
+    width :960px;
+}
+.input {
+    background-color:rgba(94, 94, 117, 1);
+}
+.gen {
+    background-color:rgba(94, 94, 117, 1);
+    border-color:red;
+}
+.hrs {
+    width: 50px;  
+}
+.min {
+    width:50px;
+}
+.description {
+    height:171px;
+    width:613px;   
+}
+.upload {
+    background-color:rgba(39,39,52,1);
+    border-radius:35px;
+    width:65px;
+}
+#adding {
+    height:50px;
+    width:190px;
+}
+
+

@@ -1,4 +1,4 @@
 export function Deleting(props) {
     
-    return <img src="remove.png" onClick={() => {props.onDelete(props.id)}}/>
+    return <img src="remove.png" onClick={props.onDelete}/>
 }
