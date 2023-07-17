@@ -138,6 +138,11 @@ body {
     padding-top : 64px;
     width :960px;
 }
+#form_cross {
+    height:40px;
+    float:right;
+    padding-right:45px;
+}
 .input {
     background-color:rgba(94, 94, 117, 1);
 }
